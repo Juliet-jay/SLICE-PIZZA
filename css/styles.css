@@ -13,9 +13,13 @@ body {
     background-color:transparent;
 }
 .image{
-    height: 250px;
+    height: 200px;
 
 }
 .jumbotron{
     width: 50%;
+    background-color: transparent !important;
+    position: absolute;
+    right: 35%;
+    transform: scaleX(0.75);
 }
