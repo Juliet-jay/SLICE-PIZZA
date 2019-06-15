@@ -1,32 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>About</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="js/script.js">
-    <link rel="stylesheet" href="js/jquery-3.4.1.js">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Creepster|Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <meta name="robots" content="noindex,follow" />
 </head>
-<body background="img/Slices-Logo-Wide-Color-w-pizza.png">
-    <div class="container-fluid">
+<body>
+  <div class="container-fluid">
+    <section background="img/8693_Pizza-with-olive-and-tomatoes-sauces (1).jpg" style="background-size:cover" class="body">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="#"><img src="img/images.jpeg" alt="" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item active"> -->
+            <a class="nav-link" href="index.html">HOME |</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link" href="MENU.html">MENU |</a>
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <a class="nav-link" href="#CONTACT">CONTACT |</a>
+            <!-- </li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br><br><br>
+    <marquee style="font-family:Book Antiqua; color: #FFFFFF" bg-color="#000080" scrollamount="20"><img
+      src="img/Slices-Logo-Wide-Color-w-pizza.png" class="image" alt=""></marquee>
+    </section>
+    <br><br><br>
+    <div class="shopping-cart" style="text-align:center;">
+      <!-- Title -->
+      <div class="title">
+        Shopping Bag
+      </div>
+      <div class="card-body card-fluid">
         <div class="row">
-            <div class= "col-md-12">
-                <img class="jo" src="img/h7bpb3aay0u9ioyiuzm6.jpeg" alt="">
-                <div>
-                    <img class="mo" src="img/b4zu.jpg" alt="">
-                </div>
-
+          <div class="col-3">
+            Item
+            <hr>
+          </div>
+          <div class="col-3">
+            Description
+            <hr>
+          </div>
+          <div class="col-3">
+            Quantity
+            <hr>
+          </div>
+          <div class="col-3">
+            Price
+            <hr>
+          </div>
+        </div>
+        <br><br>
+        <!-- Product #1 -->
+        <div class="row">
+          <div class="item">
+            <div class="col-3">
+              <div class="image">
+                <img src="img/b4zu.jpg"  alt="" class="img-fluid img-thumbnail" width="700px">
+              </div>
             </div>
+            <div class="col-3" style="padding-left:8%">
+
+              <div class="description">
+                <span>Crust</span>
+                <span>Topping</span>
+                <span>Large pizza</span>
+              </div>
+            </div>
+            <div class="col-3">
+
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="img/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="img/minus.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-3" style="text-align:center;padding-left:8%">
+
+              <div class="total-price">Kshs. 549</div>
+            </div>
+          </div>
 
         </div>
 
-    </div>
-    
-            
+        <!-- Product #2 -->
+        <div class="row">
+          <div class="item">
+            <div class="col-3">
 
-    
+              <div class="image">
+                <img src="img/h7bpb3aay0u9ioyiuzm6.jpeg" alt="" class="img-fluid img-thumbnail" width="650px" >
+              </div>
+            </div>
+            <div class="col-3" style="padding-left:8%">
+
+              <div class="description">
+                <span>Crust</span>
+                <span>Topping</span>
+                <span>Medium Pizza</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="img/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="img/minus.svg" alt="" >
+                </button>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="buttons">
+                <div class="total-price">Kshs 870</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="row">
+            <div class="item">
+              <div class="col-3">
+                <div class="image">
+                  <img src="img/pizza.jpg" alt="" class="img-fluid img-thumbnail" >
+                </div>
+              </div>
+              <div class="col-3" style="padding-left: 8%;">
+
+                <div class="description">
+                  <span>Crust</span>
+                  <span>Topping</span>
+                  <span>Small Pizza</span>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="quantity">
+                  <button class="plus-btn" type="button" name="button">
+                    <img src="img/plus.svg" alt="" />
+                  </button>
+                  <input type="text" name="name" value="1">
+                  <button class="minus-btn" type="button" name="button">
+                    <img src="img/minus.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col-3">
+
+                <div class="total-price">$349</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <hr>
+      <div id="CONTACT" class="card-footer" >
+        <h1 style="text-align: center">Contact Us</h1>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-5x"></i></a>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+  $('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value > 1) {
+      value = value - 1;
+    } else {
+      value = 0;
+    }
+
+    $input.val(value);
+
+  });
+
+  $('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value < 100) {
+      value = value + 1;
+    } else {
+      value =100;
+    }
+
+    $input.val(value);
+  });
+
+  </script>
 </body>
 </html>

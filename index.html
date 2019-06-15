@@ -2,116 +2,87 @@
 <html lang="en">
 
 <head>
-    <title>PIZZA WEBSITE</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="js/script.js">
-    <link rel="stylesheet" href="js/jquery-3.4.1.js">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <script src=pizza.js></script>
-
+  <title>PIZZA WEBSITE</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="js/script.js">
+  <link rel="stylesheet" href="js/jquery-3.4.1.js">
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <script src="pizza.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 </head>
 
-<body background="img/8693_Pizza-with-olive-and-tomatoes-sauces (1).jpg">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+<body style="background-color:#800000">
+  <div class="container-fluid">
+    <div class="card-body">
+      <section background="img/8693_Pizza-with-olive-and-tomatoes-sauces (1).jpg" style="background-size: cover" class="body">
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <a class="navbar-brand" href="#"><img src="img/images.jpeg" alt="" id="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME |<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MENU.html">MENU |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.HTML">CONTACT |</a>
-                    </li>
-                </ul>
-            </div>
+            aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME |<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MENU.html">MENU |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#CONTACT">CONTACT |</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <marquee style="font-family:Book Antiqua; color: #FFFFFF" bg-color="#000080" scrollamount="20"><img
-                src="img/Slices-Logo-Wide-Color-w-pizza.png" class="image" alt=""></marquee>
-        <div>
-
-            </select>
-            <section id="MENU-container">
-                <div class=" jumbotron">
-                    <div class="col-md-12">
-                        <form action="">
-                            <div class="form-block">
-                                <label for="">Pizza Size:</label>
-                                <select class="form-control" id="" name="size">
-                                    <option value="small" >
-                                        Small;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        500)
-                                    </option>
-                                    <option value="medium">
-                                        Medium;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        800)
-                                    </option>
-                                    <option value="large">
-                                        Large;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        1000)
-                                    </option>
-                                </select> <label for="">Crust:</label>
-                                <select class="form-control" id="" name="crust">
-                                    <option value="crispy">
-                                        Crispy
-                                        ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        50)
-                                    </option>
-                                    <option value="stuffed">
-                                        Stuffed
-                                        ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        50)
-                                    </option>
-                                    <option value="gluten-free">
-                                        Gluten-free;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        50)
-                                    </option>
-                                </select><label for="">Toppings:</label>
-                                <select class="form-control" id="" name="toppings">
-                                    <option value="pepperoni">
-                                        Pepperoni;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        100)
-                                    </option>
-                                    <option value="onions">
-                                        Onions;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        100)
-                                    </option>
-                                    <option value="bacon">
-                                        Bacon;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh
-                                        100)
-                                    </option>
-                                    <option value="olive">
-                                        Olive;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ksh 100)
-                                    </option>
-                                </select>
-                                <br><br>
-                                <select class="form-control" id="" name="delivery">
-                                    <option value="delivery">
-                                        delivery
-                                    </option>
-                                    <option value="pickup">
-                                        pickup
-                                    </option>
-            
-
-    
-
+      </header>
+      <br><br><br>
+      <marquee style="font-family:Book Antiqua; color: #FFFFFF" bg-color="#000080" scrollamount="20"><img
+        src="img/Slices-Logo-Wide-Color-w-pizza.png" class="image" alt=""></marquee>
+      </section>
+      <hr>
+      <section id="MENU">
+      </div>
+      <div class="card-body" style=" background-color:#800000">
+        <h1 style="text-align: center">Menu</h1>
+        <div class="row">
+          <div class="col-3">
+            <label for="large">small</label>
+            <img src="img/h7bpb3aay0u9ioyiuzm6.jpeg" alt="large" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-4 ">
+              <label for="large">Large</label>
+            <img src="img/Pezzo-Pizza-slice.jpg" alt="" class="img-fluid  img-thumbnail">
+          </div>
+          <div class="col-3">
+            <label for="medium">Medium</label>
+            <img src="img/pizza.jpg" alt="" class="img-fluid  img-thumbnail">
+          </div>
+          <br><br>
+          <div id="total" style="padding-left: 30%; padding-top:5%">
+            <p style="text-align: center"><strong>Total: <input type="text" placeholder=""></strong></p>
+          </div>
         </div>
-
-
+        <br>
+        <div id="shopping-cart" style="display: block; float: right; margin-bottom:3%">
+          <span id="total"></span>
+          <i class="fas fa-shopping-cart fa-5x"></i>
+        </div>
+      </div>
+      <br><br>
+    </section>
+    <hr>
+    <div id="CONTACT" class="card-footer" >
+      <h1 style="text-align:center">Contact Us</h1>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-5x"></i></a>
     </div>
-
-
+  </div>
 </body>
 
 
