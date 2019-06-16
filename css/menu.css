@@ -7,7 +7,9 @@
     text-align: center;
 
 }
-
+#font-size{
+font-size: x-large;
+}
 .navbar{
   display: block;
   flex-direction: row;
