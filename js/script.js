@@ -1,34 +1,17 @@
-$('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
 
-    if (value > 1) {
-        value = value - 1;
-    } else {
-        value = 0;
-    }
 
-$input.val(value);
-
-});
-
-$('.plus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
-
-    if (value < 100) {
-      value = value + 1;
-    } else {
-        value =100;
-    }
-
-    $input.val(value);
-});
-
-$('.like-btn').on('click', function() {
-$(this).toggleClass('is-active');
-});
+function updateShopingBag(){
+  var shoppingItems = document.getElementById('#row')[0]
+  var shoppingBagItems = shoppingItems.getElementByClassName('total-price')
+  var total=0
+  for (var i = 0; i < shopingBagItems.lenght; i++){
+    var summation = shoppingBagItems[i]
+    var priceElement = summation.getElementByClassName('total-price')[0]
+    var quantityElement = summation.getElementByClassName('.plus-btn')[0]
+    var price = parseInt(quantityElement.innerText.replace('Kshs.', ''))
+    var quantity = quantityElement.value
+    total = (price*quantity)
+  }
+  total = Math.round(total*100)
+  document.getElementById('#Total')[0],innerTex = "Kshs." + total
+}
