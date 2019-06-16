@@ -22,10 +22,10 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
   <meta name="robots" content="noindex,follow" />
 </head>
-<body>
-  <div class="container-fluid">
+<body >
+  <div class="container-fluid" style=" background-color: maroon;">
     <section background="img/8693_Pizza-with-olive-and-tomatoes-sauces (1).jpg" style="background-size:cover" class="body">
-      <header>
+      <header style="font-size: x-large">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
           <a class="navbar-brand" href="#"><img src="img/images.jpeg" alt="" id="logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -50,12 +50,17 @@
     <br><br><br>
     <marquee style="font-family:Book Antiqua; color: #FFFFFF" bg-color="#000080" scrollamount="20"><img
       src="img/Slices-Logo-Wide-Color-w-pizza.png" class="image" alt=""></marquee>
+      <br><br><br><br><br><br><br>
     </section>
     <br><br><br>
     <div class="shopping-cart" style="text-align:center;">
       <!-- Title -->
       <div class="title">
-        Shopping Bag
+        Cart 
+        <div id="shopping-cart" style="display: block; float: right; margin-bottom:3%">
+            <span id="total"></span>
+            <i class="fas fa-shopping-cart fa-5x"></i>
+          </div>
       </div>
       <div class="card-body card-fluid">
         <div id="row" class="row">
@@ -70,10 +75,10 @@
           </div>
           <div class="col-3">
             Price
-            <hr>
+          
           </div>
         </div>
-        <br><br>
+        <!-- <br><br> -->
         <!-- Product #1 -->
         <div  class="row">
           <div class="item">
@@ -225,15 +230,13 @@
         </div>
       </div>
       <br>
-      <div id="shopping-cart" style="display: block; float: right; margin-bottom:3%">
-        <span id="total"></span>
-        <i class="fas fa-shopping-cart fa-5x"></i>
-      </div>
+     
     </div>
+    <!-- <br><br> -->
       </div>
-      <br><br>
-      <hr>
-      <div id="CONTACT" class="card-footer" >
+      
+      <!-- <hr> -->
+      <div id="CONTACT" class="card-footer" style=" background-color: maroon;" >
         <h1 style="text-align: center">Contact Us</h1>
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-5x"></i></a>
       </div>
