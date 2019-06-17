@@ -138,22 +138,4 @@ border-bottom: 1px solid maroon;
     font-weight: 300;
   }
 
-  /* Responsive
-  @media (max-width: 800px) {
-    .shopping-cart {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
-
-    .image img {
-      width: 50%;
-    }
-    .image,
-    .quantity,
-    .description {
-      width: 100%;
-      text-align: center;
-      margin: 6px 0;
-    }
-  } */
+ 

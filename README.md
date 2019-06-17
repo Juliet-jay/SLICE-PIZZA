@@ -14,12 +14,10 @@ In case of any bugs; Fork a repository
     Push to the branch (git push origin improve-feature)
     Create a Pull Request or you can contact me via my email below.
  ### BDD
-   Behavior                      |input                                                 |output
- ------------------------------- |------------------------------------------------------|
- Receive size and toppings,      |Size: Small, Topping: Pepperoni, Topping: Mushrooms   |ksh;800
- displays price.                 |                                                      |           Multiple choices increase price | small( size(ksh:(800)Mushroom:(ksh100)+              |ksh;1000
-                                 |  pepperoni:(ksh:100)                                 |
- clear page information          | large(ksh;1000)+pepperoni(ksh;100)+ mushroom(ksh;100)|cleared page                                                                                                              
+   Behavior                      |input                                                |output
+ ------------------------------- |-----------------------------------------------------|
+ Receive size and toppings,      |Size: Small, Topping: Pepperoni, Topping: Mushrooms  |ksh;800
+ displays price.                 |                                                     |          Multiple choices increase price | small( size(ksh:(800)Mushroom:(ksh100)+             |ksh;1000                                         |large(ksh;1000)+pepperoni(ksh;100)+ mushroom(ksh;100)|                  cleared page  information      |                                                     | clear page                                                       
  git clone using this link https://github.com/Juliet-jay/SLICE-PIZZA.git
  Now that you have it in your local repository,open the repository and run the html on the browser.
 ##### technologies used
