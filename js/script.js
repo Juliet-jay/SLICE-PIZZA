@@ -20,9 +20,9 @@ Placeorder.prototype.costOfPizza = function () {
   }
   if (this.crust === pizzaCrust[0]) {
     this.price += 50;
-  } else if (this.cheese === pizzaCrust[1]) {
+  } else if (this.Crust === pizzaCrust[1]) {
     this.price += 100;
-  } else if (this.cheese === pizzaCrust[2]) {
+  } else if (this.Crust === pizzaCrust[2]) {
     this.price += 200;
   }
   if (this.topping === pizzaTopping[0]) {
