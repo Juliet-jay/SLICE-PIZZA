@@ -112,7 +112,7 @@ border-bottom: 1px solid maroon;
   button[class*=btn] {
     width: 30px;
     height: 30px;
-    background-color: #E1E8EE;
+    background-color: rgb(241, 229, 229);
     border-radius: 6px;
     border: none;
     cursor: pointer;
